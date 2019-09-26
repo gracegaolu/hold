@@ -1,0 +1,19 @@
+server:
+  port: 8901
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/frame?useUnicode=true&useSSL=true
+    username: root
+    password: grace
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  thymeleaf:
+    cache: false
+
+mybatis:
+  typeAliasesPackage: com.example.core.model
+  mapperLocations: classpath:mapper/*.xml
+
+
+
+
